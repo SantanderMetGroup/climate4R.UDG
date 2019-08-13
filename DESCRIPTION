@@ -1,0 +1,34 @@
+Package: climate4R.UDG
+Depends:
+    R(>= 3.5.0)
+Imports:
+    utils,
+    RCurl
+Suggests:
+    loadeR,
+    loadeR.ECOMS,
+    transformeR,
+    visualizeR,
+    downscaleR
+Type: Package
+Title: A climate4R package for harmonized data access 
+Version: 0.0.0
+Date: 2019-08-13
+Authors@R: as.person(c(
+    "Santander Meteorology Group <http://meteo.unican.es> [cph]",
+    "Joaquín Bedia <bediaj@unican.es> [aut,cre]",
+    "Antonio Cofiño <antonio.cofino@unican.es> [ctb]",
+    "Matteo de Felice <matteo.defelice@enea.it> [ctb]",
+    "Jesus Fernández <fernandej@unican.es> [ctb]",
+    "José Manuel Gutiérrez <gutierjm@unican.es> [ctb]",
+    "Sixto Herrera <herreras@unican.es> [ctb]",
+    "Maialen Iturbide <miturbide@ifca.unican.es> [aut]",
+    "Etienne Tourigny <etienne.tourigny@bsc.es> [ctb]",
+    "Max Tuni <max@predictia.es> [ctb]",
+    "Manuel Vega <manuel.vega@unican.es> [ctb]"))
+BugReports: https://github.com/SantanderMetGroup/climate4R.UDG/issues
+URL: https://github.com/SantanderMetGroup/climate4R.UDG/wiki
+Encoding: UTF-8
+Description: Enables harmonized access to either remote climate databases via UDG.
+License: file LICENSE
+RoxygenNote: 6.1.1
