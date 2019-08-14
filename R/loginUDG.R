@@ -12,6 +12,7 @@
 #'  Further details on registration for data access can be viewed in this \href{http://meteo.unican.es/trac/wiki/udg/registration}{example}.
 #' @author J Bedia, M. Vega, A. Cofino
 #' @export
+#' @importFrom rJava J
 #' @importFrom RCurl getURL
 #' @importFrom utils URLencode
 
