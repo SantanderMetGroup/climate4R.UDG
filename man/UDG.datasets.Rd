@@ -4,13 +4,13 @@
 \alias{UDG.datasets}
 \title{Show UDG datasets}
 \usage{
-UDG.datasets(which = "", pattern = "")
+UDG.datasets(pattern = "")
 }
 \arguments{
+\item{pattern}{Optional. Pattern in the dataset name as passed to function \code{\link{grep}} (case-insensitive).}
+
 \item{which}{Which group of datasets. Choices are: "OBSERVATIONS", "REANALYSIS", "CMIP5", "CORDEX". 
 By default all are diplayed.}
-
-\item{pattern}{Optional. Pattern in the dataset name as passed to function \code{\link{grep}} (case-insensitive).}
 }
 \value{
 The datasets table, in the form of a \code{data.frame}

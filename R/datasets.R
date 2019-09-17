@@ -18,10 +18,18 @@
 #' # Using argument pattern
 #' UDG.datasets(pattern = "CORDEX-EUR44.*historical")$name
 
-UDG.datasets <- function(which = "", pattern = "") {
-if (which == "") which <- c("OBSERVATIONS", "REANALYSIS", "CMIP5", "CORDEX")
-  df <- lapply(which, function(x) read.csv(file.path(find.package("climate4R.UDG"), paste0("datasets_", x,".txt")), stringsAsFactors = FALSE)[ ,1:3])
-  df <- do.call("rbind", df)
-  df[grep(pattern, df$name, ignore.case = TRUE),]
+UDG.datasets <- function(pattern = "", full.info = FALSE) {
+  lf <- list.files(file.path(find.package("climate4R.UDG")), pattern = "datasets.*.txt", full.names = TRUE)
+  df <- lapply(lf, function(x) read.csv(x, stringsAsFactors = FALSE)[ ,1:3])
+  names(df) <- gsub(lf, pattern = ".*/datasets_|.txt", replacement = "")
+  matchlist <- lapply(df, function(x) x[grep(pattern, x$name, ignore.case = TRUE),])
+  sublist <- matchlist[unlist(lapply(matchlist, function(x) nrow(x) != 0))]
+  if (pattern != "") message("Matches found for: ", names(sublist))
+  if (!full.info) message("Label names are returned, set argument full.info = TRUE to get more information")
+  if (full.info) {
+    return(sublist)
+  } else {
+    return(lapply(sublist, function(x) x[["name"]]))
+  }
 }
 
