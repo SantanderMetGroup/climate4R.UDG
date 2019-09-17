@@ -4,19 +4,18 @@
 \alias{UDG.datasets}
 \title{Show UDG datasets}
 \usage{
-UDG.datasets(pattern = "")
+UDG.datasets(pattern = "", full.info = FALSE)
 }
 \arguments{
 \item{pattern}{Optional. Pattern in the dataset name as passed to function \code{\link{grep}} (case-insensitive).}
 
-\item{which}{Which group of datasets. Choices are: "OBSERVATIONS", "REANALYSIS", "CMIP5", "CORDEX". 
-By default all are diplayed.}
+\item{full.info}{Default to FALSE. If TRUE, the complete URL is also displayed.}
 }
 \value{
 The datasets table, in the form of a \code{data.frame}
 }
 \description{
-Access the installed user's vocabulary
+Lists the harmonized datasets that are accessible via UDG.
 }
 \note{
 The function assumes that the user has read permission to the package installation directory
@@ -25,11 +24,12 @@ The function assumes that the user has read permission to the package installati
 # Default built-in datasets
 str(UDG.datasets())
 (sets <- UDG.datasets())
-sets[grep("CORDEX-EUR44.*historical", sets$name), ]
-# Pointing to a specific group of datasets
-UDG.datasets(which = "CORDEX")$name
+names(sets)
+sets$OBSERVATIONS
 # Using argument pattern
-UDG.datasets(pattern = "CORDEX-EUR44.*historical")$name
+UDG.datasets(pattern = "CORDEX-EUR44.*historical")
+# Showing the full Url of the datasets
+UDG.datasets(pattern = "E-OBS", full.info = TRUE)
 }
 \author{
 M Iturbide
