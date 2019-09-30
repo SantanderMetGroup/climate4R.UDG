@@ -24,7 +24,7 @@ UDG.datasets <- function(pattern = "", full.info = FALSE) {
   names(df) <- gsub(lf, pattern = ".*/datasets_|.txt", replacement = "")
   matchlist <- lapply(df, function(x) x[grep(pattern, x$name, ignore.case = TRUE),])
   sublist <- matchlist[unlist(lapply(matchlist, function(x) nrow(x) != 0))]
-  if (pattern != "") message("Matches found for: ", names(sublist))
+  if (pattern != "") message("Matches found for: ", paste(names(sublist), collapse = " "))
   if (!full.info) message("Label names are returned, set argument full.info = TRUE to get more information")
   if (full.info) {
     return(sublist)
