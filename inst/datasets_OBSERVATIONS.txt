@@ -13,4 +13,7 @@ UC-Spain02_11,observation,http://spock.meteo.unican.es/tds5/dodsC/Spain02/Spain0
 UC-Spain02_22,observation,http://spock.meteo.unican.es/tds5/dodsC/Spain02/Spain022_aa_3d.ncml,UC-Spain02.dic
 UC-Spain02_44,observation,http://spock.meteo.unican.es/tds5/dodsC/Spain02/Spain044_aa_3d.ncml,UC-Spain02.dic
 GPCC,observation,http://spock.meteo.unican.es/tds5/dodsC/gpcc/gpcc_v2018_Grid050.ncml,GPCC.dic
+GPCP,observation,http://meteo.unican.es/tds5/dodsC/gpcp/gpcp_sg_l3_v2.3.ncml,GPCP.dic
 CRU-TS,observation,http://spock.meteo.unican.es/tds5/dodsC/cru/cru_ts_4.03.ncml,CRU-TS.dic
+BEST,observation,http://meteo.unican.es/tds5/dodsC/best/BEST_complete_day_LatLong1.ncml,BEST.dic
+BESTmon,observation,http://meteo.unican.es/tds5/dodsC/best/BEST_complete_mon_LatLong1.ncml,BESTmon.dic
