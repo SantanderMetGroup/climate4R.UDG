@@ -1,4 +1,5 @@
 name,type,url,dicname
+<<<<<<< HEAD
 WATCH_WFDEI,observation,http://meteo.unican.es/tds5/dodsC/wfdei/wfdei_daily.ncml,WATCH_WFDEI.dic
 PIK_Obs-EWEMBI,observation,/oceano/gmeteo/WORK/DATA/UDG/ewembi/ewembi_daily.ncml,EWEMBI_DM.dic
 E-OBS_v14_0.50regular,observation,http://meteo.unican.es/tds5/dodsC/eobs/e-obs_v14_0.50regular.ncml,E-OBS_v14.dic
@@ -12,4 +13,26 @@ E-OBS_v17_0.22rotated,observation,http://meteo.unican.es/tds5/dodsC/eobs/e-obs_v
 UC-Spain02_11,observation,http://meteo.unican.es/tds5/dodsC/Spain02/Spain011_aa_3d.ncml,UC-Spain02.dic
 UC-Spain02_22,observation,http://meteo.unican.es/tds5/dodsC/Spain02/Spain022_aa_3d.ncml,UC-Spain02.dic
 UC-Spain02_44,observation,http://meteo.unican.es/tds5/dodsC/Spain02/Spain044_aa_3d.ncml,UC-Spain02.dic
+=======
+WATCH_WFDEI,observation,http://spock.meteo.unican.es/tds5/dodsC/wfdei/wfdei_daily.ncml,WATCH_WFDEI.dic
+PIK_Obs-EWEMBI,observation,http://spock.meteo.unican.es/tds5/dodsC/ewembi/ewembi_daily.ncml,EWEMBI_DM.dic
+E-OBS_v14_0.50regular,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v14_0.50regular.ncml,E-OBS_v14.dic
+E-OBS_v14_0.44rotated,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v14_0.44rotated.ncml,E-OBS_v14.dic
+E-OBS_v14_0.25regular,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v14_0.25regular.ncml,E-OBS_v14.dic
+E-OBS_v14_0.22rotated,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v14_0.22rotated.ncml,E-OBS_v14.dic
+E-OBS_v17_0.50regular,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v17_0.50regular.ncml,E-OBS_v17.dic
+E-OBS_v17_0.44rotated,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v17_0.44rotated.ncml,E-OBS_v17.dic
+E-OBS_v17_0.25regular,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v17_0.25regular.ncml,E-OBS_v17.dic
+E-OBS_v17_0.22rotated,observation,http://spock.meteo.unican.es/tds5/dodsC/eobs/e-obs_v17_0.22rotated.ncml,E-OBS_v17.dic
+UC-Spain02_11,observation,http://spock.meteo.unican.es/tds5/dodsC/Spain02/Spain011_aa_3d.ncml,UC-Spain02.dic
+UC-Spain02_22,observation,http://spock.meteo.unican.es/tds5/dodsC/Spain02/Spain022_aa_3d.ncml,UC-Spain02.dic
+UC-Spain02_44,observation,http://spock.meteo.unican.es/tds5/dodsC/Spain02/Spain044_aa_3d.ncml,UC-Spain02.dic
+GPCCmon,observation,/oceano/gmeteo/WORK/DATA/UDG/gpcc/gpcc_v2018_Grid050.ncml,GPCC.dic
+GPCC,observation,/oceano/gmeteo/WORK/DATA/UDG/gpcc/gpcc_v2018_daily_Grid100.ncml,GPCC.dic
+GPCPmon,observation,/oceano/gmeteo/WORK/DATA/UDG/gpcp/gpcp_sg_l3_v2.3.ncml,GPCPmon.dic
+GPCP,observation,/oceano/gmeteo/WORK/DATA/UDG/gpcp/gpcp_1dd_l3_v1.3.ncml,GPCP.dic
+CRU-TS,observation,/oceano/gmeteo/WORK/DATA/UDG/cru/cru_ts_4.03.ncml,CRU-TS.dic
+BEST,observation,/oceano/gmeteo/WORK/DATA/UDG/best/BEST_complete_day_LatLong1.ncml,BEST.dic
+BESTmon,observation,/oceano/gmeteo/WORK/DATA/UDG/best/BEST_complete_mon_LatLong1.ncml,BESTmon.dic
+>>>>>>> mai-devel
 

@@ -1,6 +1,6 @@
 Package: climate4R.UDG
 Depends:
-    R(>= 3.5.0),
+    R(>= 3.3.0),
     rJava
 Imports:
     utils,
