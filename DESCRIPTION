@@ -13,8 +13,8 @@ Suggests:
     downscaleR
 Type: Package
 Title: A climate4R package for harmonized data access 
-Version: 0.1.1
-Date: 2020-06-11
+Version: 0.2.0
+Date: 2020-06-16
 Authors@R: as.person(c(
     "Santander Meteorology Group <http://meteo.unican.es> [cph]",
     "Joaquín Bedia <bediaj@unican.es> [aut,cre]",
@@ -32,4 +32,4 @@ URL: https://github.com/SantanderMetGroup/climate4R.UDG/wiki
 Encoding: UTF-8
 Description: Enables harmonized access to either remote climate databases via UDG.
 License: file LICENSE
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0

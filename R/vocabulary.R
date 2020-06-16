@@ -30,16 +30,14 @@ C4R.vocabulary <- function() {
 #' @examples \dontrun{
 #' # Inclusion of a new variable ("Total snowfall amount")
 #' C4R.vocabulary.update(identifier = "prsn",
-#'                  standard_name = "total snowfall amount",
-#'                  units = "mm")
+#'                       standard_name = "total snowfall amount",
+#'                       units = "mm")
 #' C4R.vocabulary()                 
 #' # Inclusion of 2 new variables: 
-#' C4R.vocabulary.update(identifier = c("wap",
-#'                                 "plev"),
-#'                  standard_name = c("lagrangian tendency of air pressure",
-#'                                    "air pressure"),
-#'                  units = c("Pa.s-1",
-#'                            "Pa"))
+#' C4R.vocabulary.update(identifier = c("wap", "plev"),
+#'                       standard_name = c("lagrangian tendency of air pressure",
+#'                                         "air pressure"),
+#'                       units = c("Pa.s-1", "Pa"))
 #' C4R.vocabulary() 
 #' }
 
