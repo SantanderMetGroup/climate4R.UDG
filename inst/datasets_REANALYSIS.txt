@@ -1,4 +1,4 @@
 name,type,url,dicname
-JRA55,reanalysis,http://data.meteo.unican.es/thredds/dodsC/jra55/JRA55_Dataset.ncml,JRA55.dic
-ECMWF_ERA-Interim-ESD,reanalysis,http://data.meteo.unican.es/thredds/dodsC/interim/daily/interim20_daily.ncml,ERA_interim.dic
-ERA5,reanalysis,http://data.meteo.unican.es/thredds/dodsC/ipcc-atlas-era5/single-level-daily.nc,ERA5.dic
+JRA55,reanalysis,http://data.meteo.unican.es/tds5/dodsC/jra55/JRA55_Dataset.ncml,JRA55.dic
+ECMWF_ERA-Interim-ESD,reanalysis,http://data.meteo.unican.es/tds5/dodsC/interim/daily/interim20_daily.ncml,ERA_interim.dic
+ERA5,reanalysis,http://data.meteo.unican.es/tds5/dodsC/ipcc-atlas-era5/single-level-daily.nc,ERA5.dic
