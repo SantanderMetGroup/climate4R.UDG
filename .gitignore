@@ -4,3 +4,5 @@
 .Ruserdata
 climate4R.UDG.Rproj
 .Rbuildignore
+.DS_Store
+inst/.DS_Store
