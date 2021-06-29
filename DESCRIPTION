@@ -1,12 +1,12 @@
 Package: climate4R.UDG
 Depends:
     R(>= 3.5.0),
-    rJava
+    rJava,
+    loadeR
 Imports:
     utils,
     RCurl,
 Suggests:
-    loadeR,
     loadeR.ECOMS,
     transformeR,
     visualizeR,
