@@ -20,5 +20,6 @@ GPCP,observation,http://meteo.unican.es/tds5/dodsC/gpcp/gpcp_1dd_l3_v1.3.ncml,GP
 CRU-TS,observation,http://meteo.unican.es/tds5/dodsC/cru/cru_ts_4.03.ncml,CRU-TS.dic
 BEST,observation,http://meteo.unican.es/tds5/dodsC/best/BEST_complete_day_LatLong1.ncml,BEST.dic
 BESTmon,observation,http://meteo.unican.es/tds5/dodsC/best/BEST_complete_mon_LatLong1.ncml,BESTmon.dic
+W5E5,observation,https://data.meteo.unican.es/thredds/dodsC/mirrors/W5E5/w5e5_20210705,W5E5.dic
 
 
