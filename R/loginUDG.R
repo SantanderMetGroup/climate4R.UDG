@@ -7,7 +7,7 @@
 #' @details The Santander Met Group has deployed a THREDDS Data Server to enable access to different climate databases/data collections,
 #' implementing a fine-grained user authorization and using remote data access protocols with data subsetting capabilities.
 #' The THREDDS server plus the authentication layer conform the User Data Gateway (\href{http://meteo.unican.es/trac/wiki/udg}{UDG}).
-#' Prior to data access, users must set their credentials. Registration can be obtained via the THREDDS Administration Panel (\href{http://www.meteo.unican.es/tap}{TAP}),
+#' Prior to data access, users must set their credentials. Registration can be obtained via the THREDDS Administration Panel (\href{https://data.meteo.unican.es/udg-tap}{TAP}),
 #'  indicating the group (Project) you belong to (e.g. CORDEX, SPECS ...), which will grant access to certain databases.
 #'  Further details on registration for data access can be viewed in this \href{http://meteo.unican.es/trac/wiki/udg/registration}{example}.
 #' @author J Bedia, M. Vega, A. Cofino
@@ -23,7 +23,7 @@ loginUDG <- function(username, password, proxy.host = NULL, proxy.port = NULL) {
       }
       username.enc <- URLencode(username, reserved = TRUE)
       password.enc <- URLencode(password, reserved = TRUE)
-      url.check <- paste0("https://meteo.unican.es/udg-tap/rest/v1/signin/verify?username=", username.enc,
+      url.check <- paste0("https://data.meteo.unican.es/udg-tap/rest/v1/signin/verify?username=", username.enc,
                           "&password=", password.enc)
       message("[",Sys.time(), "] Setting credentials...")
       con <- tryCatch(getURL(url.check, ssl.verifypeer = FALSE), error = function(er) {
@@ -35,9 +35,9 @@ loginUDG <- function(username, password, proxy.host = NULL, proxy.port = NULL) {
       } else {
             b <- readLines(textConnection(con))
             if (grepl("SUCCESS", strsplit(b, split = "\\\""))) {
-                  message("[",Sys.time(), "] Success!\nGo to <http://www.meteo.unican.es/udg-tap/home> for details on your authorized groups and datasets")
+                  message("[",Sys.time(), "] Success!\nGo to <https://data.meteo.unican.es/udg-tap/home> for details on your authorized groups and datasets")
             } else {
-                  stop("User name and password do not match\nPlease check your registration details or visit <http://www.meteo.unican.es/udg-tap/home> if in doubt")
+                  stop("User name and password do not match\nPlease check your registration details or visit <https://data.meteo.unican.es/udg-tap/home> if in doubt")
             }
       }
       if (!is.null(proxy.host)) {
