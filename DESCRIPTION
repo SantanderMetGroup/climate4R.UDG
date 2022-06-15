@@ -1,12 +1,10 @@
 Package: climate4R.UDG
 Depends:
     R(>= 3.5.0),
-    loadeR.java,
-    httr
+    loadeR.java
 Imports:
     utils,
-    RCurl,
-    httr
+    RCurl
 Suggests:
     loadeR,
     loadeR.ECOMS,
