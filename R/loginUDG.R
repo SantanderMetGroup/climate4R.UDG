@@ -23,15 +23,18 @@ loginUDG <- function(username, password, proxy.host = NULL, proxy.port = NULL) {
       }
       username.enc <- URLencode(username, reserved = TRUE)
       password.enc <- URLencode(password, reserved = TRUE)
+      url.check <- paste0("https://data.meteo.unican.es/udg-tap/rest/v1/signin/verify?username=", username.enc,
+                          "&password=", password.enc)
       message("[",Sys.time(), "] Setting credentials...")
-      res <- tryCatch(POST("https://data.meteo.unican.es/udg-tap/rest/v1/signin/verify/secure", body = list(username=username, password=password), encode = "form"), error = function(err) {
-          err <- NULL
-          return(err)
+      con <- tryCatch(getURL(url.check, ssl.verifypeer = FALSE), error = function(er) {
+            er <- NULL
+            return(er)
       })
-      if (is.null(res)) {
+      if (is.null(con)) {
             stop("Could not establish a connection.", call. = FALSE)
       } else {
-            if(content(res, as="parsed")$response == "SUCCESS") {
+            b <- readLines(textConnection(con))
+            if (grepl("SUCCESS", strsplit(b, split = "\\\""))) {
                   message("[",Sys.time(), "] Success!\nGo to <https://data.meteo.unican.es/udg-tap/home> for details on your authorized groups and datasets")
             } else {
                   stop("User name and password do not match\nPlease check your registration details or visit <https://data.meteo.unican.es/udg-tap/home> if in doubt")
