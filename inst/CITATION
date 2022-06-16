@@ -12,7 +12,7 @@ bibentry(bibtype = "Article",
                   person(given = "Antonio S.", family = "Cofiño", role = "aut"),
                   person(given = "José Manuel", family =  "Gutiérrez", role = "aut")),
          journal = "Environmental Modelling & Software",
-         url = "http://www.meteo.unican.es/climate4r",
+         url = "https://github.com/SantanderMetGroup/climate4R",
          year = "2018",
          doi = "https://doi.org/10.1016/j.envsoft.2018.09.009"
 )
