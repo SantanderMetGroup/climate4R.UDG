@@ -13,12 +13,13 @@ Suggests:
     downscaleR
 Type: Package
 Title: A climate4R package for harmonized data access 
-Version: 0.2.4-devel
-Date: 2022-06-14
+Version: 0.2.4
+Date: 2022-06-15
 Authors@R: as.person(c(
-    "Santander Meteorology Group <http://meteo.unican.es> [cph]",
+    "Santander Meteorology Group <https://github.com/SantanderMetGroup> [cph]",
     "Joaquín Bedia <bediaj@unican.es> [aut,cre]",
-    "Antonio Cofiño <antonio.cofino@unican.es> [ctb]",
+    "Antonio S. Cofiño <antonio.cofino@unican.es> [ctb]",
+    "Ezequiel Cimadevilla <ezequiel.cimadevilla@unican.es> [ctb]",
     "Matteo de Felice <matteo.defelice@enea.it> [ctb]",
     "Jesus Fernández <fernandej@unican.es> [ctb]",
     "José Manuel Gutiérrez <gutierjm@unican.es> [ctb]",
