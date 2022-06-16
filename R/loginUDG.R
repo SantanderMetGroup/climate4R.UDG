@@ -10,7 +10,7 @@
 #' Prior to data access, users must set their credentials. Registration can be obtained via the THREDDS Administration Panel (\href{https://data.meteo.unican.es/udg-tap}{TAP}),
 #'  indicating the group (Project) you belong to (e.g. CORDEX, SPECS ...), which will grant access to certain databases.
 #'  Further details on registration for data access can be viewed in this \href{http://meteo.unican.es/trac/wiki/udg/registration}{example}.
-#' @author J Bedia, M. Vega, A. Cofino
+#' @author J Bedia, E. Cimadevilla, M. Vega, A.S. Cofino
 #' @export
 #' @importFrom rJava J
 #' @importFrom RCurl getURL
