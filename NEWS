@@ -34,3 +34,6 @@
 ## v0.2.5 (26 Jun 2023)
 * Documentation updates
 * Fix dependencies in DESCRIPTION file
+
+## v0.2.6 (26 Jun 2023)
+* Modify the conversion of precipitation flux from mm/month to mm/day in the monthly datasets

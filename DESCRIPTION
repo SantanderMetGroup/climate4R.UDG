@@ -13,7 +13,7 @@ Suggests:
     downscaleR
 Type: Package
 Title: A climate4R package for harmonized data access 
-Version: 0.2.5
+Version: 0.2.6
 Date: 2023-06-26
 Authors@R: as.person(c(
     "Santander Meteorology Group <https://github.com/SantanderMetGroup> [cph]",
