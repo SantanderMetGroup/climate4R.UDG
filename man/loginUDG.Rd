@@ -22,10 +22,10 @@ Provides HTTP authentication for accessing the Santander Met Group's THREDDS Dat
 The Santander Met Group has deployed a THREDDS Data Server to enable access to different climate databases/data collections,
 implementing a fine-grained user authorization and using remote data access protocols with data subsetting capabilities.
 The THREDDS server plus the authentication layer conform the User Data Gateway (\href{http://meteo.unican.es/trac/wiki/udg}{UDG}).
-Prior to data access, users must set their credentials. Registration can be obtained via the THREDDS Administration Panel (\href{http://www.meteo.unican.es/tap}{TAP}),
+Prior to data access, users must set their credentials. Registration can be obtained via the THREDDS Administration Panel (\href{https://data.meteo.unican.es/udg-tap}{TAP}),
  indicating the group (Project) you belong to (e.g. CORDEX, SPECS ...), which will grant access to certain databases.
  Further details on registration for data access can be viewed in this \href{http://meteo.unican.es/trac/wiki/udg/registration}{example}.
 }
 \author{
-J Bedia, M. Vega, A. Cofino
+J Bedia, E. Cimadevilla, M. Vega, A.S. Cofino
 }
