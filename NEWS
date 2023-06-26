@@ -26,6 +26,11 @@
 ## v0.2.3 (05 Jul 2021)
 * Add W5E5 observational dataset
 
+## v0.2.4 (16 Jun 2022)
+* Changed URLs from http to https
+* Changed dependencies
+* Some minor changes
+
 ## v0.2.4 (26 Jun 2023)
 * Documentation updates
 * Fix dependencies in DESCRIPTION file
