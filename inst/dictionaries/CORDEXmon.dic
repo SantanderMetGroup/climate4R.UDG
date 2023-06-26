@@ -1,6 +1,6 @@
 identifier,short_name,time_step,lower_time_bound,upper_time_bound,cell_method,offset,scale,deaccum,derived,interface
-pr,pr,730.464h,0,730.464,sum,0,2629670,0,0,
-prsn,prsn,730.464h,0,730.464,sum,0,2629670,0,0,
+pr,pr,730.464h,0,730.464,sum,0,86400,0,0,
+prsn,prsn,730.464h,0,730.464,sum,0,86400,0,0,
 psl,psl,730.464h,0,730.464,mean,0,1,0,0,
 uas,uas,730.464h,0,730.464,mean,0,1,0,0,
 vas,vas,730.464h,0,730.464,mean,0,1,0,0,
